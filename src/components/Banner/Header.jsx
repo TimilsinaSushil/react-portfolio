@@ -66,6 +66,7 @@ const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 100;
       .bar {
         position: absolute;
         width: 100%;
@@ -110,7 +111,7 @@ const Logo = styled.div`
 
 const Nav = styled.div`
   @media (max-width: 640px) {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     background-color: #01be96;
@@ -126,6 +127,7 @@ const Nav = styled.div`
     height: ${(props) => (props.bar ? "100vh" : "0px")};
     transition: height 400ms ease-in-out;
     overflow: hidden;
+    z-index: 99;
   }
   span {
     margin-left: 1rem;
