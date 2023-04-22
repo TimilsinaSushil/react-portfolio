@@ -4,6 +4,7 @@ import ProfileComponent from "./components/Banner/ProfileComponent";
 import Services from "./components/Service/Services";
 import Projects from "./components/Projects/Projects";
 import Clients from "./components/Clients/Clients";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,11 +15,15 @@ function App() {
       </Banner>
       <Services />
 
-      <Project>
+      <LightBackground>
         <Projects />
-      </Project>
-      
-      <Clients/>
+      </LightBackground>
+
+      <Clients />
+
+      <LightBackground>
+        <Footer />
+      </LightBackground>
     </Container>
   );
 }
@@ -35,6 +40,6 @@ const Banner = styled.div`
   }
 `;
 
-const Project = styled.div`
-background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-`
+const LightBackground = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`;
