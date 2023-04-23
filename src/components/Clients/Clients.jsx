@@ -83,7 +83,7 @@ const Clients = () => {
   let clientDisc = "";
   clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
-    <Container>
+    <Container id="client">
       <span className="green">Testimonials</span>
       <h1>What clients say</h1>
       <Testimonials>

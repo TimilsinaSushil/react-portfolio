@@ -5,7 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import Card from "./Card";
 const Services = () => {
   return (
-    <Container>
+    <Container id="service">
       <h4>
         My <span className="green">services</span>
       </h4>

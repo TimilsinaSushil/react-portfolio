@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,22 +9,24 @@
   scroll-behavior: smooth;
 }
 
-:root{
+:root {
   --lighter: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   ---background: #191923;
 }
 
-body{
+body {
   width: 100%;
   background-color: var(---background);
   color: #fff;
 }
 
-.green{
+.green {
   color: #01be96;
 }
 
-.slick-list, .slick-slider, .slick-track {
+.slick-list,
+.slick-slider,
+.slick-track {
   padding: 1.5rem 0;
 }
 
@@ -37,17 +39,44 @@ body{
   opacity: 1;
 }
 
-.center .project{
+.center .project {
   opacity: 0.7;
   pointer-events: none;
 }
 
-@media(max-width:990px){
+@media(max-width:990px) {
   .center .slick-center .project {
     transform: scale(1);
   }
-  .center .project{
+
+  .center .project {
     opacity: 1;
     pointer-events: all;
   }
 }
+
+
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+/* handel */
+
+::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 50px;
+}
+
+/* handel on hover */
+
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
+
+

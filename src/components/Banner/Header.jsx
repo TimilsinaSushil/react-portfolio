@@ -14,19 +14,19 @@ const Header = () => {
       </Logo>
       <Nav>
         <span>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </span>
         <span>
-          <a href="#">Services</a>
+          <a href="#service">Services</a>
         </span>
         <span>
-          <a href="#">Projects</a>
+          <a href="#project">Projects</a>
         </span>
         <span>
-          <a href="#">Testimonials</a>
+          <a href="#client">Testimonials</a>
         </span>
         <span>
-          <a href="#">Portfolio</a>
+          <a href="#footer">Portfolio</a>
         </span>
       </Nav>
       <div

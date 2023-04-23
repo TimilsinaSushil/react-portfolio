@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const ProfileComponent = () => {
   return (
-    <Container>
+    <Container id="home">
       <Texts>
         <h4>
           Hello <span className="green">I'am</span>
