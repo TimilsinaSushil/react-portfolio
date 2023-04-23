@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Slide } from "react-awesome-reveal";
 
 let clients = [
   {
@@ -84,8 +85,11 @@ const Clients = () => {
   clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
     <Container id="client">
+      <Slide direction="left">
       <span className="green">Testimonials</span>
       <h1>What clients say</h1>
+      </Slide>
+    
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>
           {clientDisc}

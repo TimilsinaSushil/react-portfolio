@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import SliderComp from "./Slider";
+import { Zoom } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <Container id="project">
-      <h1>
+     <Zoom>
+     <h1>
         Recent <span className="green">Projects</span>
       </h1>
       <p>
@@ -13,6 +15,7 @@ const Projects = () => {
         ullam dolores odio ipsam atque soluta. Dolore mollitia omnis ducimus
         tempore molestiae!
       </p>
+     </Zoom>
       <Slide>
         <SliderComp/>
       </Slide>

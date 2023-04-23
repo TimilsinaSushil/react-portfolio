@@ -6,12 +6,16 @@ import Projects from "./components/Projects/Projects";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 
+import { Fade } from "react-awesome-reveal";
+
 function App() {
   return (
     <Container>
       <Banner>
+        <Fade>
         <Header />
         <ProfileComponent />
+        </Fade>
       </Banner>
       <Services />
 

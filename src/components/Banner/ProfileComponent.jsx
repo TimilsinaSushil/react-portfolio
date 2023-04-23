@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Slide } from "react-awesome-reveal";
 
 const ProfileComponent = () => {
   return (
     <Container id="home">
-      <Texts>
+     <Slide direction="left">
+     <Texts>
         <h4>
           Hello <span className="green">I'am</span>
         </h4>
@@ -40,12 +42,15 @@ const ProfileComponent = () => {
           </div>
         </Social>
       </Texts>
-      <Profile>
+     </Slide>
+     <Slide direction="right">
+     <Profile>
         <img
           src="https://www.kindpng.com/picc/m/442-4426088_model-girl-hd-png-download.png"
           alt="Model - Girl, HD Png Download@kindpng.com"
         />
       </Profile>
+     </Slide>
     </Container>
   );
 };

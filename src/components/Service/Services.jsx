@@ -3,14 +3,18 @@ import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./Card";
+import { Slide } from "react-awesome-reveal";
 const Services = () => {
   return (
     <Container id="service">
-      <h4>
+     <Slide direction="down">
+     <h4>
         My <span className="green">services</span>
       </h4>
       <h1>What I do</h1>
+     </Slide>
       <Cards>
+        <Slide direction="left">
         <Card
           Icon={MdDesignServices}
           title={"ui/ux designer"}
@@ -21,6 +25,9 @@ const Services = () => {
           doloribus hic.
         `}
         />
+        </Slide>
+
+        <Slide direction="up">
         <Card
           Icon={FiCodesandbox}
           title={"ui/ux designer"}
@@ -31,6 +38,8 @@ const Services = () => {
           doloribus hic.
         `}
         />
+        </Slide>
+        <Slide direction="right">
         <Card
           Icon={CgWebsite}
           title={"ui/ux designer"}
@@ -41,6 +50,7 @@ const Services = () => {
           doloribus hic.
         `}
         />
+        </Slide>
       </Cards>
     </Container>
   );

@@ -6,70 +6,99 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const Footer = () => {
-    const scrollUp = ()=>{
-        window.scroll({
-            top:0,
-            behaviour: "smooth"
-        })
-    }
+  const scrollUp = () => {
+    window.scroll({
+      top: 0,
+      behaviour: "smooth",
+    });
+  };
   return (
     <Container id="footer">
       <Profile>
-        <h1>Portfolio</h1>
+        <Slide direction="left" delay={1}>
+          <h1>Portfolio</h1>
+        </Slide>
         <div className="address">
-          <h1>Address:</h1>
-          <p>33700 Bhakunde Pokhara</p>
+          <Slide direction="left">
+            <h1>Address:</h1>
+          </Slide>
+          <Slide direction="left">
+            <p>33700 Bhakunde Pokhara</p>
+          </Slide>
         </div>
         <div className="links">
-          <h1>Contact me directly</h1>
+          <Slide direction="left">
+            <h1>Contact me directly</h1>
+          </Slide>
           <div>
             <span>
               <FiPhoneCall></FiPhoneCall>
             </span>
-            <a href="tel:+9779840610060">+9779840610060</a>
+            <Slide direction="left">
+              <a href="tel:+9779840610060">+9779840610060</a>
+            </Slide>
           </div>
           <div>
-            <span>
-              <HiOutlineMailOpen />
-            </span>
-            <a href="mailto:developer.timilsina@gmail.com">
-              developer.timilsina@gmail.com
-            </a>
+            <Slide direction="left">
+              <span>
+                <HiOutlineMailOpen />
+              </span>
+            </Slide>
+            <Slide>
+              {" "}
+              <a href="mailto:developer.timilsina@gmail.com">
+                developer.timilsina@gmail.com
+              </a>
+            </Slide>
           </div>
           <div className="profiles">
+            <Slide direction="left">
             <h1>Check my Profiles</h1>
+            </Slide>
             <div className="icons">
-              <span>
-                <a href="#">
-                  <AiFillGithub />
-                </a>
-              </span>
-              <span>
-                <a href="#">
-                  <AiFillLinkedin />
-                </a>
-              </span>
-              <span>
-                <a href="#">
-                  <BsFacebook />
-                </a>
-              </span>
-              <span>
-                <a href="#">
-                  <BsSlack />
-                </a>
-              </span>
+              <Zoom>
+                <span>
+                  <a href="#">
+                    <AiFillGithub />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a href="#">
+                    <AiFillLinkedin />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a href="#">
+                    <BsFacebook />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a href="#">
+                    <BsSlack />
+                  </a>
+                </span>
+              </Zoom>
             </div>
-            <ArrowUp onClick={scrollUp} >
+           <Fade>
+           <ArrowUp onClick={scrollUp}>
               <AiOutlineArrowUp />
             </ArrowUp>
+           </Fade>
           </div>
         </div>
       </Profile>
       <Form>
-        <form>
+       <Slide direction="right">
+       <form>
           <div className="name">
             <span>
               <CgProfile />
@@ -91,6 +120,7 @@ const Footer = () => {
 
           <button>Submit</button>
         </form>
+       </Slide>
       </Form>
     </Container>
   );
