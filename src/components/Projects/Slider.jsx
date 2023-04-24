@@ -1,11 +1,6 @@
 import Slider from "react-slick";
 import Project from "./Project";
-import {
-  IoIosArrowBack,
-  IoIosArrowForward,
-  ToToArrowBack,
-  ToToArrowForward,
-} from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 import { useRef } from "react";
 
