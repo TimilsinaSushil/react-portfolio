@@ -5,18 +5,28 @@ pipeline {
         stage('Building') {
             steps {
                 echo 'Building...'
+                sh 'sleep 6'
             }
         }
          stage('Testing') {
             steps {
                 echo 'Testing...'
+                sh 'sleep 3'
             }
         }
-         stage('Deployment') {
+         stage('Deployment to K8S') {
             steps {
-                echo 'Deployment Done'
+                echo 'Deployment Done on Kubernetes Cluster'
+                sh 'sleep 3'
             }
         }
+        stage('Send email alert') {
+                    steps {
+                        echo 'Email alert done'
+                        sh 'sleep 3'
+                    }
+                }
+
   }
   post {
           success {
