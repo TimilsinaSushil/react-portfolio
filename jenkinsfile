@@ -1,17 +1,18 @@
 pipeline {
-    agent any
+    agent {label Node A}
 
     stages {
         stage('Building') {
             steps {
-                echo 'Building...'
+                echo 'Git version...'
+                sh 'git version'
                 sh 'sleep 6'
             }
         }
          stage('Testing') {
             steps {
-                echo 'Testing...'
-                sh 'sleep 3'
+                echo 'Java Version...'
+                sh 'java --version'
             }
         }
          stage('Deployment to K8S') {
